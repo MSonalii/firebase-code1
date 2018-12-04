@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Firebase Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        .bs-example{
+            border: 1px solid #ccc;
+            width: 440px;
+            margin: 50px auto;
+        }
+        .login-form{
+            margin-bottom: 15px;
+            /*background: #f7f7f7;*/
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .error-msg{
+          text-align: center;
+          color: #de1d1d;
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example login-form" style="margin-top: 120px;">
+    <h2 class="text-center">Register User</h2>
+    <div class="form-group">
+        <input type="email" class="form-control" id="txtName" placeholder="First Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="txtlastName" placeholder="Last Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="txtEmail" placeholder="Username" required>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="txtPassword" placeholder="Password" required>
+    </div>
+    <div id="register-err" class="error-msg"></div>
+    <div class="form-group">
+         <button type="submit" class="btn btn-primary btn-block" id="btnSignup">Register</button>
+    </div>
+</div>
+<p class="message text-center">registered? <a href="./index.html">Back to login page</a></p>
+    <script src="index.js"></script>
+</body>
+</html> 

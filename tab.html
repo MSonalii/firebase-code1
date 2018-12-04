@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome User</title>
+		<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+		<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/leaflet@0.7.7/dist/leaflet.css"/>
+    	<script src = "https://cdn.jsdelivr.net/npm/leaflet@0.7.7/dist/leaflet.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style type="text/css">
+			#loading-info{
+				display: block;
+			    border: 1px solid #ccc;
+			    margin-top: 10%;
+			    width: 500px;
+			    height: 28px;
+			    background-color: #e0e2ea;
+			    margin-left: 30%;
+			}
+		</style>
+</head>
+<body>
+	<button type="submit" class="btn btn-primary" id="btnLogin" style="float: right;margin-right: 5%;">Log out</button>
+	<div id="tabs" style="margin-top:1%;">
+		<ul class="nav nav-tabs">
+ 			<li class="active"><a href="#">Dashboard</a></li>
+  			<li class="dropdown"><a href="#">User Detail</a></li>
+	  		<li><a href="#">Settings</a></li>
+	  		<li><a href="#">About</a></li>
+		</ul>
+	</div>
+
+	<div id="welcome-div" style="margin-top: 10%;margin-left: 40%;">
+		<h2>Welcome User!!!</h2><br>
+		<button onclick="displayMap()" class="btn btn-primary">Get Location Information</button>
+	</div>
+	<div id="loading-info">
+		<i style="margin: 5px;font-size: 20px;text-align: center;margin-left: 28%;">Please wait data is loading....</i>	
+	</div>
+	<div id="map" style="height: 600px;"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Firebase Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .bs-example{
+            border: 1px solid #ccc;
+            width: 440px;
+            margin: 50px auto;
+        }
+        .login-form{
+            margin-bottom: 15px;
+            /*background: #f7f7f7;*/
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .error-msg{
+          text-align: center;
+          color: #de1d1d;
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example login-form" style="margin-top: 120px;">
+    <h2 class="text-center">Log in</h2>
+    <div class="form-group">
+        <input type="email" class="form-control" id="txtEmail" placeholder="Username" required>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="txtPassword" placeholder="Password" required>
+    </div>
+    <div id="login-err" class="error-msg"></div>
+    <div class="form-group">
+         <button type="submit" class="btn btn-primary btn-block" id="btnLogin">Login</button>
+         <button type="submit" class="btn btn-primary btn-block" id="btnLoginDisable" style="opacity: 0.4"> Login <i class="fa fa-spinner fa-pulse fa-fw"></i><span class="sr-only">Loading...</span></button>
+    </div>
+</div>
+    <p class="message text-center">Not registered? <a href="./register.html">Create an account</a></p>
+    <script src="index.js"></script>
+</body>
+</html> 
